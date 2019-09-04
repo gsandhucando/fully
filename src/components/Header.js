@@ -1,9 +1,9 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart, faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const cart = <FontAwesomeIcon icon={faShoppingCart} />
-const search = <FontAwesomeIcon icon={faSearch} />
+const cart = <FontAwesomeIcon icon={faShoppingCart} />;
+const search = <FontAwesomeIcon icon={faSearch} />;
 
 const Header = () => {
   return (

@@ -1,17 +1,24 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-$grey: #F3F3F3;
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+$grey: #f3f3f3;
 $darkGrey: #767676;
-$babyBlue: #F1FBFD;
-$yellow: #FFD62B;
-$background: #FFFFFF;
+$babyBlue: #f1fbfd;
+$yellow: #ffd62b;
+$background: #ffffff;
 
 @import "header";
+@import "banner";
+@import "content";

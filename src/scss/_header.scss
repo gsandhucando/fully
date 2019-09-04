@@ -1,75 +1,95 @@
-.header-container{
-  height: 50px;
+.header-container {
+  height: 5vh;
   width: 100%;
-  // display: flex;
-
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  left: 0;
   background: $grey;
-  a{
+  z-index: 1;
+  a {
+    // z-index: 0;
     color: $darkGrey;
     font-weight: bold;
+    cursor: pointer;
   }
-  .header-top{
+  .header-top {
+    background: $grey;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
-    .header-left{
+    align-items: center;
+    font-size: 14px;
+    margin: 7px 0;
+    color: black;
+    .header-left {
       margin: 5px;
-      a{
+      a {
+        font-weight: 500;
+        color: black;
         margin-left: 20px;
       }
     }
-    .header-right{
+    .header-right {
       margin: 5px;
-      a{
+      a {
+        font-weight: 500;
+        color: black;
         margin-right: 20px;
       }
     }
   }
-  .header-bottom{
-    height: 80px;
+  .header-bottom {
+    // z-index: 1;
+    height: 70px;
     width: 100%;
-    background: $background;
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $grey;
-
-    .header-logo{
+    position: relative;
+    top: -29%;
+    .header-logo {
+      z-index: 99;
       display: flex;
       align-items: center;
-      font-size: 35px;
+      font-size: 40px;
       margin: 5px;
-      a{
+      a {
+        z-index: 99;
         color: $yellow;
         margin-left: 20px;
       }
     }
-    .header-middle{
+    .header-middle {
+      z-index: 99;
       display: flex;
       justify-content: space-around;
       align-items: center;
       color: black;
       font-weight: 400;
-      .standing-container{
+      .standing-container {
+        z-index: 99;
         margin-right: 50px;
         font-weight: 600;
         cursor: pointer;
       }
-      .chairs-container{
+      .chairs-container {
         margin: 50px;
         font-weight: 600;
         cursor: pointer;
       }
-      .accessories-container{
+      .accessories-container {
         margin-left: 50px;
         font-weight: 600;
         cursor: pointer;
       }
-      // margin: 5px;
     }
-    .header-search{
+    .header-search {
       display: flex;
       align-items: center;
       margin: 5px;
-      a{
+      a {
         margin-right: 20px;
       }
     }

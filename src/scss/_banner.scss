@@ -1,0 +1,75 @@
+.product-banner {
+  //works for screen size 1017 need to make fit for all sized --------------------------->
+  // overflow: auto;
+  position: absolute;
+  top: -13%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background: url("/images/banner/bannerimage.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  //  background: red;
+  a {
+    height: 200px;
+    width: 100px;
+    z-index: 10;
+
+    &:nth-child(1) {
+      position: absolute;
+      z-index: 99999;
+      top: 45%;
+      left: 5%;
+      background: red;
+      cursor: pointer;
+    }
+    &:nth-child(2) {
+      position: absolute;
+      top: 45%;
+      left: 17%;
+      background: blue;
+    }
+    &:nth-child(3) {
+      position: absolute;
+      top: 36%;
+      left: 29%;
+      height: 269px;
+      background: blue;
+    }
+    &:nth-child(4) {
+      position: absolute;
+      top: 47%;
+      left: 45%;
+      width: 120px;
+      background: violet;
+    }
+    &:nth-child(5) {
+      position: absolute;
+      top: 47%;
+      left: 60%;
+      height: 190px;
+      background: purple;
+    }
+    &:nth-child(6) {
+      position: absolute;
+      top: 47%;
+      left: 72%;
+      width: 90px;
+      height: 190px;
+      background: peru;
+    }
+    &:nth-child(7) {
+      position: absolute;
+      top: 41%;
+      left: 85%;
+      width: 120px;
+      height: 237px;
+      background: indianred;
+    }
+  }
+}
