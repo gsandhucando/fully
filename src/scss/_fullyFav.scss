@@ -15,9 +15,16 @@
     margin: 40px 0;
   }
   .fully-fav-container-top {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: repeat(auto-fit, 1fr);
+    // grid-gap: 10px;
+    grid-row-gap: 30px;
+    // grid-auto-flow: dense;
     .fully-fav-item-container {
       display: flex;
       // flex-direction: column;
