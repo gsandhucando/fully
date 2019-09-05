@@ -11,6 +11,7 @@
   // background: red;
   // position: relative;
   .content-statement {
+    overflow: scroll;
     // height: vh;
     display: flex;
     flex-direction: column;
@@ -31,143 +32,139 @@
     // height: 100%;
     width: 100%;
     display: flex;
-    ul{
+    ul {
       margin: 40px 0;
       list-style: none;
       // display: inline-block;
       display: flex;
       flex-direction: row-reverse;
-    .li-statement{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      padding: 0 50px;
-      h1{
-        font-size: 32px;
-        margin-bottom: 30px;
-        font-weight: 300;
-      }
-      p {
-            font-size: 18px;
-            width: 100%;
-            margin-bottom: 30px;
+      .li-statement {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        h1 {
+          font-size: 32px;
+          margin-bottom: 30px;
+          font-weight: 300;
+        }
+        p {
+          font-size: 18px;
+          width: 100%;
+          margin-bottom: 30px;
         }
         button {
-              height: 50px;
-              width: 190px;
-              border: none;
-              color: $btn;
-              border: 2px solid $btn;
-              font-size: 15px;
-              font-weight: bold;
-              background: $background;
-              cursor: pointer;
-              transition: all .3s ease-in-out;
-              &:hover{
-                transition: all .3s ease-in-out;
-                color: red;
-                // color: red;
-                border: 2px solid red;
-              }
+          height: 50px;
+          width: 190px;
+          border: none;
+          color: $btn;
+          border: 2px solid $btn;
+          font-size: 15px;
+          font-weight: bold;
+          background: $background;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: red;
+            // color: red;
+            border: 2px solid red;
           }
-
-    }
-    li{
-      picture{
-        display: flex;
-        // height: 100px;
-        width: auto;
-        img{
+        }
+      }
+      li {
+        picture {
           display: flex;
           // height: 100px;
           width: auto;
-          &:nth-child(1) {
-                  height: 420px;
-                  width: auto;
-                  padding-right: 3px;
-                }
-                &:nth-child(2) {
-                  height: 350px;
-                  width: auto;
-                }
+          img {
+            display: flex;
+            // height: 100px;
+            width: auto;
+            &:nth-child(1) {
+              height: 420px;
+              width: auto;
+              padding-right: 3px;
+            }
+            &:nth-child(2) {
+              height: 350px;
+              width: auto;
+            }
+          }
         }
       }
-
-  }
-  }
+    }
     margin-top: 55px;
   }
   .content-statement2 {
     // height: 100%;
     width: 100%;
     display: flex;
-    ul{
+    ul {
       margin: 40px 0;
       list-style: none;
       // display: inline-block;
       display: flex;
       // flex-direction: row-reverse;
-    .li-statement{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      padding: 0 50px;
-      h1{
-        font-size: 32px;
-        margin-bottom: 30px;
-        font-weight: 300;
-      }
-      p {
-            font-size: 18px;
-            width: 100%;
-            margin-bottom: 30px;
+      .li-statement {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        h1 {
+          font-size: 32px;
+          margin-bottom: 30px;
+          font-weight: 300;
+        }
+        p {
+          font-size: 18px;
+          width: 100%;
+          margin-bottom: 30px;
         }
         button {
-              height: 50px;
-              width: 190px;
-              border: none;
-              color: $btn;
-              border: 2px solid $btn;
-              font-size: 15px;
-              font-weight: bold;
-              background: $background;
-              cursor: pointer;
-              transition: all .3s ease-in-out;
-              &:hover{
-                transition: all .3s ease-in-out;
-                color: red;
-                border: 2px solid red;
-              }
+          height: 50px;
+          width: 190px;
+          border: none;
+          color: $btn;
+          border: 2px solid $btn;
+          font-size: 15px;
+          font-weight: bold;
+          background: $background;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: red;
+            border: 2px solid red;
           }
-
-    }
-    li{
-      picture{
-        display: flex;
-        // height: 100px;
-        width: auto;
-        img{
+        }
+      }
+      li {
+        picture {
           display: flex;
           // height: 100px;
           width: auto;
-          &:nth-child(1) {
-                  height: 420px;
-                  width: auto;
-                  padding-right: 3px;
-                }
-                &:nth-child(2) {
-                  height: 350px;
-                  width: auto;
-                }
+          img {
+            display: flex;
+            // height: 100px;
+            width: auto;
+            &:nth-child(1) {
+              height: 420px;
+              width: auto;
+              padding-right: 3px;
+            }
+            &:nth-child(2) {
+              height: 350px;
+              width: auto;
+            }
+          }
         }
       }
-
-  }
-  }
+    }
     margin-top: 55px;
   }
 }

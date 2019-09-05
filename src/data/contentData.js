@@ -25,7 +25,7 @@ const contentData = [
     img1: "/images/content/contentAccessories1.png",
     img2: "/images/content/contentAccessories2.png",
     alt: "people"
-  },
-]
+  }
+];
 
 export default contentData;
