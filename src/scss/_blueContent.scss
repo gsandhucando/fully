@@ -94,6 +94,7 @@
       width: 100%;
       position: relative;
       .blue3 {
+        z-index: 1;
         height: 320px;
         width: auto;
         margin-right: 4px;
@@ -102,6 +103,7 @@
         top: 0%;
       }
       .blue4 {
+        z-index: 1;
         height: auto;
         width: auto;
         max-width: 500px;

@@ -2,6 +2,7 @@ import React from "react";
 import contentData from "../data/contentData";
 import FullyFav from "./FullyFav";
 import BlueConent from "./BlueContent";
+import Review from "./Review";
 
 const Content = () => {
   let contentDisplay = () => {
@@ -44,6 +45,7 @@ const Content = () => {
       {contentDisplay()}
       <FullyFav />
       <BlueConent />
+      <Review />
     </div>
   );
 };
