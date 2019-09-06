@@ -17,7 +17,7 @@ const Header = () => {
     setChairMenuOpen(true);
   };
   const mouseEnterAcc = () => {
-    setAccChairMenuOpen(true)
+    setAccChairMenuOpen(true);
   };
 
   const mouseLeaveDesk = () => {
@@ -63,7 +63,6 @@ const Header = () => {
                     style={{ borderTop: "4px solid gold", width: 60 }}
                   ></span>
                   <li>
-                    {" "}
                     <img
                       src="/images/content/fully-javis-alloy-bamboo-standing-desk.png"
                       alt="desk"
@@ -78,6 +77,14 @@ const Header = () => {
                     />
                     Desk Converters
                   </li>
+                  <li>
+                    {" "}
+                    <img
+                      src="/images/content/fully-javis-l-shape-maple-laminate-standing-desk.png"
+                      alt="desk"
+                    />
+                    L-Shaped
+                  </li>
                 </div>
               ) : null}
             </ul>
@@ -88,7 +95,6 @@ const Header = () => {
               onMouseLeave={mouseLeaveChair}
               className="chairs"
             >
-              {" "}
               Chairs
               {chairMenuOpen ? (
                 <div className="list-chairs">
@@ -121,17 +127,19 @@ const Header = () => {
               onMouseLeave={mouseLeaveAcc}
               className="accessories"
             >
-              {" "}
               Accessories
               {accMenuOpen ? (
                 <div className="list-accessories">
                   <span
                     style={{ borderTop: "4px solid gold", width: 60 }}
                   ></span>
-                  <li><img
+                  <li>
+                    <img
                       src="/images/content/fully-topo-anti-fatigue-standing-desk-mat-car.png"
                       alt="mat"
-                    />Jarvis Accessories</li>
+                    />
+                    Jarvis Accessories
+                  </li>
                   {/* <li>Standing Mats & Balance Boards</li> */}
                 </div>
               ) : null}

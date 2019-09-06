@@ -1,6 +1,7 @@
 import React from "react";
 import contentData from "../data/contentData";
 import FullyFav from "./FullyFav";
+import BlueConent from "./BlueContent";
 
 const Content = () => {
   let contentDisplay = () => {
@@ -42,6 +43,7 @@ const Content = () => {
     <div className="content-container">
       {contentDisplay()}
       <FullyFav />
+      <BlueConent />
     </div>
   );
 };
