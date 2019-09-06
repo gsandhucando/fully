@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -6,6 +6,30 @@ const cart = <FontAwesomeIcon icon={faShoppingCart} />;
 const search = <FontAwesomeIcon icon={faSearch} />;
 
 const Header = () => {
+  let [deskMenuOpen, setDeskMenuOpen] = useState(false);
+  let [chairMenuOpen, setChairMenuOpen] = useState(false);
+  let [accMenuOpen, setAccChairMenuOpen] = useState(false);
+
+  const mouseEnterDesk = () => {
+    setDeskMenuOpen(true);
+  };
+  const mouseEnterChair = () => {
+    setChairMenuOpen(true);
+  };
+  const mouseEnterAcc = () => {
+    setAccChairMenuOpen(true)
+  };
+
+  const mouseLeaveDesk = () => {
+    setDeskMenuOpen(false);
+  };
+  const mouseLeaveChair = () => {
+    setChairMenuOpen(false);
+  };
+  const mouseLeaveAcc = () => {
+    setAccChairMenuOpen(false);
+  };
+
   return (
     <div className="header-container">
       <div className="header-top">
@@ -26,27 +50,91 @@ const Header = () => {
         </div>
         <div className="header-middle">
           <div className="standing-container">
-            <ul className="standing">
+            <ul
+              onMouseEnter={mouseEnterDesk}
+              onMouseLeave={mouseLeaveDesk}
+              className="standing"
+            >
               {" "}
               Standing Desks
-              {/* <li>Jarvis Adjustable Desks</li>
-          <li>Desk Converters</li> */}
+              {deskMenuOpen ? (
+                <div className="list-standing">
+                  <span
+                    style={{ borderTop: "4px solid gold", width: 60 }}
+                  ></span>
+                  <li>
+                    {" "}
+                    <img
+                      src="/images/content/fully-javis-alloy-bamboo-standing-desk.png"
+                      alt="desk"
+                    />
+                    Jarvis Adjustable Desks
+                  </li>
+                  <li>
+                    {" "}
+                    <img
+                      src="/images/content/fully-cooper-bamboo-standing-desk-convertor.png"
+                      alt="desk convertor"
+                    />
+                    Desk Converters
+                  </li>
+                </div>
+              ) : null}
             </ul>
           </div>
           <div className="chairs-container">
-            <ul className="chairs">
+            <ul
+              onMouseEnter={mouseEnterChair}
+              onMouseLeave={mouseLeaveChair}
+              className="chairs"
+            >
               {" "}
               Chairs
-              {/* <li>For Standing Desks</li>
-          <li>For Traditional Desks</li> */}
+              {chairMenuOpen ? (
+                <div className="list-chairs">
+                  <span
+                    style={{ borderTop: "4px solid gold", width: 60 }}
+                  ></span>
+                  <li>
+                    {" "}
+                    <img
+                      src="/images/content/fully-active-seating-chair-capisco-saddle.png"
+                      alt="chair"
+                    />{" "}
+                    For Standing Desks
+                  </li>
+                  <li>
+                    {" "}
+                    <img
+                      src="/images/content/fully-active-seating-chair-capisco-puls-saddle.png"
+                      alt="desk convertor"
+                    />
+                    For Traditional Desks
+                  </li>
+                </div>
+              ) : null}
             </ul>
           </div>
           <div className="accessories-container">
-            <ul className="accessories">
+            <ul
+              onMouseEnter={mouseEnterAcc}
+              onMouseLeave={mouseLeaveAcc}
+              className="accessories"
+            >
               {" "}
               Accessories
-              {/* <li>Jarvis Accessories</li>
-          <li>Standing Mats & Balance Boards</li> */}
+              {accMenuOpen ? (
+                <div className="list-accessories">
+                  <span
+                    style={{ borderTop: "4px solid gold", width: 60 }}
+                  ></span>
+                  <li><img
+                      src="/images/content/fully-topo-anti-fatigue-standing-desk-mat-car.png"
+                      alt="mat"
+                    />Jarvis Accessories</li>
+                  {/* <li>Standing Mats & Balance Boards</li> */}
+                </div>
+              ) : null}
             </ul>
           </div>
         </div>

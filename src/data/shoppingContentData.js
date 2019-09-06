@@ -5,7 +5,7 @@ const shoppingContentData = [
     alt: "desk",
     title: "Jarvis Bamboo Standing Desk",
     detail: "Best standing desk for (and on) the planet.",
-    stars: "5 (2287)",
+    stars: "(2287)",
     price: "$449.00"
   },
   {
@@ -14,7 +14,7 @@ const shoppingContentData = [
     alt: "chair",
     title: "Capisco Chair by HÅG",
     detail: "Most versatile all-day chair",
-    stars: "5 (153)",
+    stars: "(153)",
     price: "$799.00"
   },
   {
@@ -23,7 +23,7 @@ const shoppingContentData = [
     alt: "desk",
     title: "Jarvis L-Shaped Standing Desk",
     detail: "Corner desk for the corner office",
-    stars: "5 (121)",
+    stars: "(121)",
     price: "$1,249.00"
   },
   {
@@ -32,7 +32,7 @@ const shoppingContentData = [
     alt: "table desk",
     title: "Cooper Standing Desk Converter",
     detail: "Thoughtful design, quality materials",
-    stars: "5 (130)",
+    stars: "(130)",
     price: "$325.00"
   },
   {
@@ -41,7 +41,7 @@ const shoppingContentData = [
     alt: "mat",
     title: "Topo Mini & Topo Anti-Fatigue Mats",
     detail: "Inspired by natural movement",
-    stars: "5 (88)",
+    stars: "(88)",
     price: "$69.00"
   },
   {
@@ -50,7 +50,7 @@ const shoppingContentData = [
     alt: "pink chair",
     title: "Capisco Puls by HÅG",
     detail: "Firmer & narrower saddle than Capisco",
-    stars: "5 (51)",
+    stars: "(51)",
     price: "$549.00"
   }
 ];
