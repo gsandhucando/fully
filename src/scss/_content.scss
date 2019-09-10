@@ -1,7 +1,7 @@
 .content-container {
   margin-top: 600px;
   // height: 100%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +44,8 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        padding: 0 50px;
+        // padding: 0 50px;
+        margin-left: 5px;
         h1 {
           font-size: 32px;
           margin-bottom: 30px;
@@ -54,6 +55,9 @@
           font-size: 18px;
           width: 100%;
           margin-bottom: 30px;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 393px;
         }
         button {
           height: 50px;
@@ -84,7 +88,7 @@
             // height: 100px;
             width: auto;
             &:nth-child(1) {
-              height: 420px;
+              height: 370px;
               width: auto;
               padding-right: 3px;
             }
@@ -114,7 +118,8 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        padding: 0 50px;
+        // padding: 0 50px;
+        margin-right: 5px;
         h1 {
           font-size: 32px;
           margin-bottom: 30px;
@@ -124,6 +129,9 @@
           font-size: 18px;
           width: 100%;
           margin-bottom: 30px;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 393px;
         }
         button {
           height: 50px;
@@ -153,7 +161,7 @@
             // height: 100px;
             width: auto;
             &:nth-child(1) {
-              height: 420px;
+              height: 370px;
               width: auto;
               padding-right: 3px;
             }

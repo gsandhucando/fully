@@ -15,14 +15,14 @@
     margin: 40px 0;
   }
   .fully-fav-container-top {
-    width: 70%;
-    // margin: 0 auto;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 60px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-row-gap: 60px;
     // grid-auto-flow: dense;
     .fully-fav-item-container {
       display: flex;
@@ -34,7 +34,7 @@
         img {
           cursor: pointer;
           height: auto;
-          width: 300px;
+          width: 350px;
         }
         h3 {
           cursor: pointer;
