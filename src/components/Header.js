@@ -31,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header-container">
+    <div className="header-container" onChange={console.log(window.innerHeight)}>
       <div className="header-top">
         <div className="header-left">
           <a href="#-">Commercial Sales</a>
@@ -44,7 +44,7 @@ const Header = () => {
           <a href="#-">{cart}</a>
         </div>
       </div>
-      <div className="header-bottom">
+      <div className="header-bottom" >
         <div className="header-logo">
           <a href="#-">fully</a>
         </div>
@@ -60,7 +60,7 @@ const Header = () => {
               {deskMenuOpen ? (
                 <div className="list-standing">
                   <span
-                    style={{ borderTop: "4px solid gold", width: 60 }}
+                    style={{ borderTop: "4px solid gold", width: 60, display: "flex"}}
                   ></span>
                   <li>
                     <img
@@ -99,7 +99,7 @@ const Header = () => {
               {chairMenuOpen ? (
                 <div className="list-chairs">
                   <span
-                    style={{ borderTop: "4px solid gold", width: 60 }}
+                    style={{ borderTop: "4px solid gold", width: 60, display: "flex" }}
                   ></span>
                   <li>
                     {" "}
@@ -131,7 +131,7 @@ const Header = () => {
               {accMenuOpen ? (
                 <div className="list-accessories">
                   <span
-                    style={{ borderTop: "4px solid gold", width: 60 }}
+                    style={{ borderTop: "4px solid gold", width: 60, display: "flex" }}
                   ></span>
                   <li>
                     <img

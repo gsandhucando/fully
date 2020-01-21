@@ -1,20 +1,20 @@
 .product-banner {
   //works for screen size 1017 need to make fit for all sized --------------------------->
   // overflow: auto;
-  position: absolute;
-  top: -13%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  height: 100%;
+  // position: absolute;
+  // top: -13%;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // z-index: 0;
+  height: 500px;
   width: 100%;
-  background: url("/images/banner/bannerimage.png") no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: contain;
-  //  background: red;
+  // background: url("/images/banner/bannerimage.png") no-repeat center;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: contain;
+   background: #F0F7FC;
   a {
     height: 200px;
     width: 100px;
