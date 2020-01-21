@@ -35,16 +35,10 @@ const Footer = () => {
           <li>Contact</li>
           <li>Commercial Sales</li>
         </ul>
-      </div>
-      <div className='footer-mid'>
-        <div>
         <ul>
           <h5>Connect</h5>
           <li>Portland Showroom</li>
           <li>San Francisco Showroom</li>
-        </ul>
-        </div>
-        <div style={{marginTop: '-40px'}}>
         <ul style={{display: 'flex', justifyContent: 'space-between'}}>
           <li>{fb}</li>
           <li>{twitter}</li>
@@ -53,15 +47,12 @@ const Footer = () => {
           <li>{link}</li>
           <li>{youtube}</li>
         </ul>
-        </div>
-      </div>
-      <div className='footer-mid'>
-        <div>
+        </ul>
         <ul>
           <h5>Love your work more.</h5>
         </ul>
-        </div>
       </div>
+
     </div>
   )
 }
