@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import HeaderListItem from "./HeaderListItem"
+import data from '../data/shoppingContentData'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,6 +11,9 @@ const Header = () => {
   let [deskMenuOpen, setDeskMenuOpen] = useState(false);
   let [chairMenuOpen, setChairMenuOpen] = useState(false);
   let [accMenuOpen, setAccChairMenuOpen] = useState(false);
+  let [desk, setDesk] = useState(null)
+  let [chair, setChair] = useState(null)
+  let [other, setOther] = useState(null)
 
   const mouseEnterDesk = () => {
     setDeskMenuOpen(true);
@@ -30,8 +35,29 @@ const Header = () => {
     setAccChairMenuOpen(false);
   };
 
+  useEffect(() => {
+    let deskItems = data.map((item) => {
+      if (item.alt === 'desk') {
+        return <HeaderListItem key={item.title} src={item.img} alt={item.alt} title={item.title} />
+      }
+    })
+    let chairItems = data.map((item) => {
+      if (item.alt.includes('chair')) {
+        return <HeaderListItem key={item.title} src={item.img} alt={item.alt} title={item.title} />
+      }
+    })
+    let OtherItems = data.map((item) => {
+      if (item.alt !== 'desk' && !item.alt.includes('chair')) {
+        return <HeaderListItem key={item.title} src={item.img} alt={item.alt} title={item.title} />
+      }
+    })
+    setDesk(deskItems)
+    setChair(chairItems)
+    setOther(OtherItems)
+  }, [])
+
   return (
-    <div className="header-container" onChange={console.log(window.innerHeight)}>
+    <div className="header-container" >
       <div className="header-top">
         <div className="header-left">
           <a href="#-">Commercial Sales</a>
@@ -62,29 +88,7 @@ const Header = () => {
                   <span
                     style={{ borderTop: "4px solid gold", width: 60, display: "flex"}}
                   ></span>
-                  <li>
-                    <img
-                      src="/images/content/fully-javis-alloy-bamboo-standing-desk.png"
-                      alt="desk"
-                    />
-                    Jarvis Adjustable Desks
-                  </li>
-                  <li>
-                    {" "}
-                    <img
-                      src="/images/content/fully-cooper-bamboo-standing-desk-convertor.png"
-                      alt="desk convertor"
-                    />
-                    Desk Converters
-                  </li>
-                  <li>
-                    {" "}
-                    <img
-                      src="/images/content/fully-javis-l-shape-maple-laminate-standing-desk.png"
-                      alt="desk"
-                    />
-                    L-Shaped
-                  </li>
+                  {desk}
                 </div>
               ) : null}
             </ul>
@@ -101,22 +105,7 @@ const Header = () => {
                   <span
                     style={{ borderTop: "4px solid gold", width: 60, display: "flex" }}
                   ></span>
-                  <li>
-                    {" "}
-                    <img
-                      src="/images/content/fully-active-seating-chair-capisco-saddle.png"
-                      alt="chair"
-                    />{" "}
-                    For Standing Desks
-                  </li>
-                  <li>
-                    {" "}
-                    <img
-                      src="/images/content/fully-active-seating-chair-capisco-puls-saddle.png"
-                      alt="desk convertor"
-                    />
-                    For Traditional Desks
-                  </li>
+                  {chair}
                 </div>
               ) : null}
             </ul>
@@ -133,13 +122,7 @@ const Header = () => {
                   <span
                     style={{ borderTop: "4px solid gold", width: 60, display: "flex" }}
                   ></span>
-                  <li>
-                    <img
-                      src="/images/content/fully-topo-anti-fatigue-standing-desk-mat-car.png"
-                      alt="mat"
-                    />
-                    Jarvis Accessories
-                  </li>
+                  {other}
                   {/* <li>Standing Mats & Balance Boards</li> */}
                 </div>
               ) : null}

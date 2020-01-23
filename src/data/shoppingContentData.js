@@ -5,7 +5,7 @@ const shoppingContentData = [
     alt: "desk",
     title: "Jarvis Bamboo Standing Desk",
     detail: "Best standing desk for (and on) the planet.",
-    stars: "(2287)",
+    stars: 2287,
     price: "$449.00"
   },
   {
@@ -14,7 +14,7 @@ const shoppingContentData = [
     alt: "chair",
     title: "Capisco Chair by HÅG",
     detail: "Most versatile all-day chair",
-    stars: "(153)",
+    stars: 153,
     price: "$799.00"
   },
   {
@@ -23,16 +23,16 @@ const shoppingContentData = [
     alt: "desk",
     title: "Jarvis L-Shaped Standing Desk",
     detail: "Corner desk for the corner office",
-    stars: "(121)",
+    stars: 121,
     price: "$1,249.00"
   },
   {
     id: "4",
     img: "/images/content/fully-cooper-bamboo-standing-desk-convertor.png",
-    alt: "table desk",
+    alt: "desk",
     title: "Cooper Standing Desk Converter",
     detail: "Thoughtful design, quality materials",
-    stars: "(130)",
+    stars: 130,
     price: "$325.00"
   },
   {
@@ -41,18 +41,27 @@ const shoppingContentData = [
     alt: "mat",
     title: "Topo Mini & Topo Anti-Fatigue Mats",
     detail: "Inspired by natural movement",
-    stars: "(88)",
+    stars: 88,
     price: "$69.00"
   },
   {
     id: "6",
-    img: "/images/content/fully-active-seating-chair-capisco-puls-saddle.png",
-    alt: "pink chair",
-    title: "Capisco Puls by HÅG",
-    detail: "Firmer & narrower saddle than Capisco",
-    stars: "(51)",
-    price: "$549.00"
-  }
+    img: "/images/content/fully-luna-standing.png",
+    alt: "white chair",
+    title: "Luna Standing Desk Stool",
+    detail: "Easy leaning for more active working",
+    stars: 30,
+    price: "$225.00"
+  },
+  {
+    id: "7",
+    img: "/images/content/fully-tictoc.png",
+    alt: "brown chair",
+    title: "Tic Toc Chair",
+    detail: "Move-without-thinking-about-it chair",
+    stars: 68,
+    price: "$225.00"
+  },
 ];
 
 export default shoppingContentData;
