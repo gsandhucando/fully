@@ -9,11 +9,10 @@ const Content = () => {
     return contentData.map((data, i) => {
       console.log(data);
       return (
-        <div key={i}>
+        <div key={i} style={{width: '100%'}}>
           <div className="content-statement">
             <p style={data.id > 1 ? { display: "none" } : null}>
-              Fully has the best desks, chairs, and other tools to keep you
-              moving, engaged, and loving how you feel at work.
+            Everything you need to love your work more
             </p>
           </div>
           <div
@@ -23,11 +22,11 @@ const Content = () => {
           >
             <ul>
               <li className="li-statement">
-                <h1>{data.statement}</h1>
-                <p>{data.statementP}</p>
-                <button>{data.btn}</button>
-              </li>
-              <li>
+                <div className='text-container'>
+                  <h1>{data.statement}</h1>
+                  <p>{data.statementP}</p>
+                  <button>{data.btn}</button>
+                </div>
                 <picture>
                   <img className="img1" src={data.img1} alt={data.alt} />
                   <img className="img2" src={data.img2} alt={data.alt} />

@@ -51,17 +51,15 @@
     }
   }
   .review-customer {
-    height: 100%;
-    // background: red;
+    height: 495px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    // align-items: center;
+    justify-content: space-evenly;
     text-align: center;
     width: 100%;
     padding: 0 15px;
     color: $darkGrey;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     a {
       margin-top: 20px;
       color: #0f7dc5;

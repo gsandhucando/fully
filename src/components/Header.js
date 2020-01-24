@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {useRouteMatch, matchPath} from 'react-router-dom'
 import HeaderListItem from "./HeaderListItem"
 import data from '../data/shoppingContentData'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +15,12 @@ const Header = () => {
   let [desk, setDesk] = useState(null)
   let [chair, setChair] = useState(null)
   let [other, setOther] = useState(null)
+  let [searchClicked, setSearchClicked] = useState(false)
+
+  let handleSearchClick = () => {
+    console.log(searchClicked)
+    setSearchClicked(!searchClicked)
+  }
 
   const mouseEnterDesk = () => {
     setDeskMenuOpen(true);
@@ -35,7 +42,10 @@ const Header = () => {
     setAccChairMenuOpen(false);
   };
 
+  let match = useRouteMatch();
+
   useEffect(() => {
+    console.log(match.url, ' props ')
     let deskItems = data.map((item) => {
       if (item.alt === 'desk') {
         return <HeaderListItem key={item.title} src={item.img} alt={item.alt} title={item.title} />
@@ -70,7 +80,7 @@ const Header = () => {
           <a href="#-">{cart}</a>
         </div>
       </div>
-      <div className="header-bottom" >
+      <div className="header-bottom" style={match.url === '/' ? {background: '#F0F7FC'} : null}>
         <div className="header-logo">
           <a href="#-">fully</a>
         </div>
@@ -129,7 +139,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className="header-search">
+        <div className="header-search" onClick={handleSearchClick}>
           <a href="#-">{search}</a>
         </div>
       </div>
