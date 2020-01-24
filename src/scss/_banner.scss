@@ -18,9 +18,14 @@
       text-align: center;
       cursor: pointer;
       p{
-        transition: all 600ms ease-in-out;
-        opacity: 0;
-        margin-bottom: 20px;
+        transition: all 300ms ease-in-out;
+        // opacity: 0;
+        &:nth-child(odd){
+          margin: 10px;
+        }
+        // &:nth-last-child(){
+        //   margin: 28px;
+        // }
       }
     }
   }
