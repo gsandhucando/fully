@@ -1,7 +1,7 @@
 import React from 'react';
 import './scss/App.scss';
 
-import Header from './components/Header';
+// import Header from './components/Header';
 import Banner from './components/Banner';
 import Content from './components/Content';
 import Footer from './components/Footer';
@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Banner />
       <Content />
       <Footer />

@@ -6,16 +6,19 @@ const shoppingContentData = [
     title: "Jarvis Bamboo Standing Desk",
     detail: "Best standing desk for (and on) the planet.",
     stars: 2287,
-    price: "$449.00"
+    price: "$449.00",
+
   },
   {
     id: "2",
     img: "/images/content/fully-active-seating-chair-capisco-saddle.png",
+    img2: "/images/content/fully-active-seating-chair-capisco-saddle-brown.png",
     alt: "chair",
     title: "Capisco Chair by HÅG",
     detail: "Most versatile all-day chair",
     stars: 153,
-    price: "$799.00"
+    price: "$799.00",
+    discription: "Capisco’s award-winning design offers a variety of healthy and active sitting postures, making it the perfect complement to an adjustable standing desk. If you're interested in purchasing a different sized lift, please contact our customer service team."
   },
   {
     id: "3",

@@ -82,11 +82,12 @@
           background: $background;
           cursor: pointer;
           transition: all 0.3s ease-in-out;
+          border-radius: 5px;
           &:hover {
             transition: all 0.3s ease-in-out;
-            color: red;
-            // color: red;
-            border: 2px solid red;
+            color: white;
+            border: 2px solid $btn;
+            background: $btn;
           }
         }
       }
@@ -161,10 +162,12 @@
           background: $background;
           cursor: pointer;
           transition: all 0.3s ease-in-out;
+          border-radius: 5px;
           &:hover {
             transition: all 0.3s ease-in-out;
-            color: red;
-            border: 2px solid red;
+            color: white;
+            border: 2px solid $btn;
+            background: $btn;
           }
         }
       }

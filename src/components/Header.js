@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import {useRouteMatch, matchPath} from 'react-router-dom'
+import {useRouteMatch, Link} from 'react-router-dom'
 import HeaderListItem from "./HeaderListItem"
 import data from '../data/shoppingContentData'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart, faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const cart = <FontAwesomeIcon icon={faShoppingCart} />;
 const search = <FontAwesomeIcon icon={faSearch} />;
+const cross = <FontAwesomeIcon icon={faTimes} />;
 
 const Header = () => {
   let [deskMenuOpen, setDeskMenuOpen] = useState(false);
@@ -80,11 +81,22 @@ const Header = () => {
           <a href="#-">{cart}</a>
         </div>
       </div>
-      <div className="header-bottom" style={match.url === '/' ? {background: '#F0F7FC'} : null}>
+      <div className="header-bottom" style={!searchClicked && match.url !== '/' ? {background: '#F0F7FC'} : null}>
         <div className="header-logo">
-          <a href="#-">fully</a>
+        <Link to="/"><a href="#-">fully</a></Link>
         </div>
-        <div className="header-middle">
+        { searchClicked ?
+        <>
+          <div className="header-middle">
+          <input className='header-input' placeholder="Search for products, articles and videos..." autoFocus />
+          </div>
+          <div className="header-search" onClick={handleSearchClick}>
+            <a href="#-">{cross}</a>
+          </div>
+          </>
+          :
+          <>
+          <div className="header-middle">
           <div className="standing-container">
             <ul
               onMouseEnter={mouseEnterDesk}
@@ -142,6 +154,8 @@ const Header = () => {
         <div className="header-search" onClick={handleSearchClick}>
           <a href="#-">{search}</a>
         </div>
+        </>
+        }
       </div>
     </div>
   );

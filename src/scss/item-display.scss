@@ -1,0 +1,11 @@
+.item-display-container{
+  display: flex;
+  .item-display-left{
+    width: 50%;
+  }
+  .item-display-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import './index.css';
 import App from './App';
+import Header from './components/Header';
+import ItemDisplay from './views/ItemDisplay';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
   <Router>
+        <Header />
     <Switch>
-      <Route path="/">
-        <App />
-      </Route>
+      <Route exact path="/" component={App} />
+      <Route path="/item/:title" component={ItemDisplay} />
     </Switch>
   </Router>
 )

@@ -6,7 +6,8 @@ const contentData = [
     btn: `Shop Desks`,
     img1: "/images/content/contentDesk1.png",
     img2: "/images/content/contentDesk2.png",
-    alt: "people around desk"
+    alt: "people around desk",
+    title: "jarvis"
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ const contentData = [
     btn: `Shop Chairs`,
     img1: "/images/content/contentChair1.png",
     img2: "/images/content/contentChair2.png",
-    alt: "people on chairs"
+    alt: "people on chairs",
+    title: "capisco"
   },
   {
     id: 3,
@@ -24,7 +26,8 @@ const contentData = [
     btn: `Shop Accessories`,
     img1: "/images/content/contentAccessories1.png",
     img2: "/images/content/contentAccessories2.png",
-    alt: "people"
+    alt: "people",
+    title: "topo"
   }
 ];
 
